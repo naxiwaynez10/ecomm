@@ -13,7 +13,8 @@
   (Integer/parseInt (str/replace str  "\"" "")))
 
 (defn str->float [str]
-  (Float/parseFloat (str/replace str  "\"" "")))
+  (Double/parseDouble (str/replace str  "\"" "")))
+
 
 ;; (defn fix-points [float]
 ;;   (let [point-index (str/index-of float ".")
